@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio-PWA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-liberty-main w-full h-screen flex flex-col justify-center items-center">
+    <div class="container w-3/4 flex flex-col items-center justify-center bg-liberty-main rounded-xl shadow-shadow-neumorphism">
+        <header class="mt-16">
+            <div class="rounded-md w-48 h-48 bg-platinum overflow-hidden">
+                <img src="img/logo-lola.png" alt="">
+            </div>
+        </header>
+        <div class="my-4">
+            <div class="w-48 flex justify-around">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M15 8a5 5 0 0 1 0 8" />
+                    <path d="M17.7 5a9 9 0 0 1 0 14" />
+                    <path d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+                </svg>
+                <input type="range" min="0" max="100" name="rango" id="volume">
+            </div>
+            <div class="w-48 flex justify-evenly my-9">
+                <div id="btn-play" class="bg-liberty-main shadow-btn-shadow active:shadow-btn-active p-6 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 4v16l13 -8z" />
+                    </svg>
+                </div>
+                <div id="btn-stop" class="bg-liberty-main shadow-btn-shadow active:shadow-btn-active p-6 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-stop" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="5" y="5" width="14" height="14" rx="2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <audio class="hidden" controls>
+            <source src="https://cdn.instream.audio/:9081/stream?in_device_id=wp-9704c540-eaed-4c33-b74b-b1af49397828">
+        </audio>
+    </div>
+</body>
+</html>
