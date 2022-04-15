@@ -2,6 +2,10 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        Poppins: 'Poppins, sans-serif',
+        Inconsolata: 'Inconsolata, monospace'
+      },
       colors: {
         liberty: {
           main: '#485696',
